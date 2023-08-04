@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a8670a4b68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header id="header">
+            <div class="header">
+                <nav>
+                    <div>
+                        <img src="Images/logo.png" alt="Logo" class="logo">
+                    </div>
+                    <div>
+                        <ul id="sidemenu">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About_Us">About Music</a></li>
+                            <li><a href="#songs">Songs</a></li>
+                            <li><a href="#video_songs">Video Songs</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                        </ul>
+                    </div>
+                    
+                    <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                </nav>
+            </div>
+    </header>
+
+
+    <section id="Home">
+        <div class="container">
+            <div class="Home-text">
+                <p>Bridges</p>
+                <h1>Fall for <span>Love</span><br> And now I got a Disease!</h1>
+            </div>
+        </div>
+    </section>
+    
+    <section id="About_Us">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/img2.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Music</h1>
+                        <p>Genre: Pop<br>
+                            Albums: Bridges<br>
+                            Record label: gavn! under exclusive license to UnitedMasters<br>
+                            Based out of Seattle Washington, Gavin Maher, professionally known as gavn!<br>
+                            </p>
+    
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('top_songs')">Top Songs</p>
+                                <p class="tab-links"  onclick="opentab('playlist')">Top Playlist</p>
+                                <p class="tab-links"  onclick="opentab('artist')">Artist</p>
+                            </div>
+    
+                            <dic class="tab-contents active-tab" id="top_songs">
+                                <ul>
+                                    <li><span>South Dakota</span></li>
+                                    <li><span>Poseidon</span></li>
+                                    <li><span>City of Angels</span></li>
+                                    <li><span>Madelyne</span></li>
+                                </ul>
+                            </dic>
+                            <dic class="tab-contents" id="playlist">
+                               <ul>
+                                <li><span>Here, just for now</span></li>
+                                <li><span>Bridges- Solo</span></li>
+                                <li><span>Emerald City</span></li>
+                               </ul>
+                            </dic>
+                            <dic class="tab-contents" id="artist">
+                                <img class="artist-image" src="Images/gavn.png" alt="">
+                                <p class="artist-info">
+                                    Based out of Seattle Washington, Gavin Maher, professionally known as gavn!, is a singer and rapper from the underground rap scene known for his incredible hooks and vocal range on tracks like “Ecstasy!”, “Come Thru” and “Havoc!”. He arrived on SoundCloud by making songs with Kody Lavigne, SypSki and Yung 808. Gavn! continues making tracks that are as catchy as they are deep and thoughtful.
+                                </p>
+                            </dic>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+    <section id="songs">
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Songs</h1>
+                <div class="services-list">
+                    <div class="item">
+                        <div class="songs_div">
+                            <img class="all_songs" src="Images/song1.jpg" alt="">
+                            <h2>Crazy</h2>
+                            <p>Gavn!</p>
+                            <a href="https://music.youtube.com/watch?v=YHJGQ4nAvRI&feature=share">Play now <br><i class="fa-solid fa-play fa-beat"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="songs_div">
+                            <img class="all_songs" src="Images/song2.jpg" alt="">
+                            <h2 id="big_size_text">City of Angels</h2>
+                            <p>Gavn!</p>
+                            <a href="https://music.youtube.com/watch?v=ek22kNL0ubc&feature=share">Play now <br><i class="fa-solid fa-play fa-beat"></i></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="songs_div">
+                            <img class="all_songs" src="Images/song3.jpg" alt="">
+                            <h2 id="big_size_text">Emerald city</h2>
+                            <p>Gavn!</p>
+                            <a href="https://music.youtube.com/watch?v=6EQWisq_Qsk&feature=share">Play now <br><i class="fa-solid fa-play fa-beat"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://music.youtube.com/channel/UCa0CJPhNAo1385IpGpUkqWQ" class="btn">See More</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="video_songs">
+        <div id="Video_Songs">
+            <div class="container">
+                <h1 class="sub-title">Video Songs</h1>
+                <div class="worklist">
+                    <div class="work">
+                        <a href="https://music.youtube.com/watch?v=yEVr6LdLZ18&feature=share">
+                            <img src="Images/song4.jpg" alt="">
+                        </a>
+                        <div class="layer">
+                            <h3>Poseidon</h3>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a class="imp" href="https://music.youtube.com/watch?v=nMjX721_96w&feature=share">
+                            <img src="Images/song5.jpg" alt="">
+                        </a>
+                        <div class="layer">
+                            <h3>Destroy me</h3>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <a href="https://music.youtube.com/watch?v=6p8pbYwhvWU&feature=share">
+                            <img src="Images/song6.jpg" alt="">
+                        </a>
+                        <div class="layer">
+                            <h3>I'd Hate me Too</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/@whereisgavn/videos" class="btn">See More</a>
+            </div>
+         </div>
+    </section>
+    
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope"></i>1to1mgmt@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i>United States</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/whereisgavn/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://open.spotify.com/artist/2pQzh5cuuqpDErGZNaOULd?autoplay=true"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="https://www.youtube.com/channel/UCi0Rj-GtImawSqsuQLl7c-w"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="Images/My Website.rar" download class="btn btn2">Download Website</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="copyright">
+            <p>Copyright © Deven Hirlekar, 2023.</p>
+        </div>
+    </footer>
+    
+
+    <script>
+        function openMenu() {
+            var sidemenu = document.getElementById("sidemenu");
+            sidemenu.style.right = '0';
+        }
+
+        function closeMenu() {
+            var sidemenu = document.getElementById("sidemenu");
+            sidemenu.style.right = '-200px';
+        }
+    </script>
+    
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links')
+        var tablcontents = document.getElementsByClassName('tab-contents')
+    
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove('active-link')
+            }
+            for (tablcontent of tablcontents){
+                tablcontent.classList.remove('active-tab')
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        const header = document.getElementById('header');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            header.style.top = '-100px'; 
+        } else {
+            header.style.top = '0';
+        }
+        lastScrollTop = scrollTop;
+        });
+    </script>
+
+
+</body>
+</html>
